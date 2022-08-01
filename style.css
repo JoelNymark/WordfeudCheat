@@ -5,7 +5,7 @@
 
 .container{
     margin: 0;
-    position: absolute;
+    position: relative;
     max-width: 80vw;
     top: 50%;
     left: 50%;
@@ -14,3 +14,20 @@
     overflow: auto;
     border: 3px solid green;
 }
+
+
+.grid-container {
+    display: grid;
+    row-gap: 5px;
+    grid-template-columns: auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }

@@ -56,8 +56,18 @@ async function sortList(){
   final = uniqueChars.sort((a, b) => a.length - b.length);
 }
 
-function printonsite(){
-  document.getElementById("demo").innerHTML = (final);
+// function printonsite(){
+//   document.getElementById("demo").innerHTML = (final);
+// }
+
+
+function printonsite() {
+  for (let pos = 0; pos < final.length; pos++) {
+    const para = document.createElement("p");
+    const node = document.createTextNode(final[pos]);
+    para.appendChild(node);
+    document.getElementById("demo").appendChild(para);
+  }
 }
 
 async function runall() {
