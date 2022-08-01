@@ -68,9 +68,9 @@ function printonsite() {
 async function runall() {
   var letters = document.getElementById("myText").value;
   if(letters !== ""){
+    // console.log("running everything now...please wait");
+    // document.getElementById("demo").innerHTML = "running everything now...please wait"
     await getPosibleWords(letters)
-    console.log("running everything now...please wait");
-    document.getElementById("demo").innerHTML = "running everything now...please wait"
     await readTextFile("./text.txt");
     await checklistofwords();
     await removedup()
