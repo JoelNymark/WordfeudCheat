@@ -56,11 +56,6 @@ async function sortList(){
   final = uniqueChars.sort((a, b) => a.length - b.length);
 }
 
-// function printonsite(){
-//   document.getElementById("demo").innerHTML = (final);
-// }
-
-
 function printonsite() {
   for (let pos = 0; pos < final.length; pos++) {
     const para = document.createElement("p");
@@ -91,6 +86,6 @@ async function runall() {
 }
 
 //things to do 
-// add so user can enter letters by them self like a html text area.............working
-// make the print out better .. preferebely in a col but a grid maybe works too.not working
-// css can be added too for a bit nicer looking site............................not working
+// add so user can enter letters by them self like a html text area...............working
+// make the print out better .. preferebely in a col but a grid maybe works too...working
+// css can be added too for a bit nicer looking site..............................not working

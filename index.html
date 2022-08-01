@@ -5,16 +5,24 @@
     <title>Wordfeud</title>
     <script src="wordfeud.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: rgb(67, 67, 67);">
+<body style="background-color: rgb(67, 67, 67); font-family: 'Bebas Neue', cursive;">
     
     <div class="grid-container">
         <div class="grid-item">
             <div class="text">Enter up to 7 char:</div>
 
-            <input type="text" id="myText" size="20" maxlength="7" ></input>
+            <!-- <input type="text" id="myText" class="inputText" size="20" maxlength="7" ></input> -->
+            
         
-            <button onclick="runall()">search for words</button>
+            <div class="form__group">
+                <input type="text" id="myText" class="form__input" id="name" placeholder="abcdefg" size="20" maxlength="7"/>
+            </div>
+            
+            <button class="button" onclick="runall()">search for words</button>
         
         </div>
         <div class="grid-item">
