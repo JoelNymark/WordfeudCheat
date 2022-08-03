@@ -57,6 +57,8 @@ async function sortList(){
 }
 
 function printonsite() {
+  const myNode = document.getElementById("demo");
+  myNode.innerHTML = '';
   for (let pos = 0; pos < final.length; pos++) {
     const para = document.createElement("p");
     const node = document.createTextNode(final[pos]);
@@ -65,7 +67,17 @@ function printonsite() {
   }
 }
 
+async function removedwords(){
+  //remove the previoisse search of words.
+}
+
 async function runall() {
+  combi = [];
+  uncheckedList = [];
+  final = [];
+  arr = [];
+  uniqueChars = [];
+
   var letters = document.getElementById("myText").value;
   if(letters !== ""){
     // console.log("running everything now...please wait");
